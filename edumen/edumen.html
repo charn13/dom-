@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+    /* .father{
+        background-image: url(https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+      background-repeat: no-repeat;
+    } */
+   #firstchild{
+    width: 50%;
+    float: left;
+   }   
+  
+   #sectchild{
+    width: 50%;
+    float: left;
+    
+   }   
+  .clear{
+    clear: both;
+  }
+ #heading{
+    background-color: red;
+ }
+  </style>
+
+</head>
+<body class="father">
+    <section  id="father">
+ 
+
+
+    </section>
+    <div class="clear"></div>
+<script>
+
+    let father = document.getElementById('father')
+  
+    
+ 
+    let creatdiv = document.createElement('div')
+  creatdiv.setAttribute('id', 'firstchild')
+  creatdiv.setAttribute('class', 'firstchild')
+  console.log(creatdiv, 'check div');
+  father.appendChild(creatdiv)
+
+
+  
+    let creatdiv2 = document.createElement('div')
+  creatdiv2.setAttribute('id', 'secchild')
+  creatdiv2.setAttribute('class', 'secchild')
+  console.log(creatdiv2, 'check div');
+  father.appendChild(creatdiv2)
+
+   let creath1 =document.createElement('h1')
+   creath1.setAttribute('id','heading')
+  creatdiv.innerHTML= '50% off'
+
+
+  
+
+
+</script>
+
+</body>
+</html>
