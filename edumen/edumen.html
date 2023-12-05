@@ -1,30 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
   <style>
-    /* .father{
-        background-image: url(https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    .father{
+        /* background-image: url(https://images.pexels.com/photos/1415734/pexels-photo-1415734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
       background-repeat: no-repeat;
-    } */
+      height: 1000px; */
+    }
+    body{
+      width: 70%;
+      margin: auto;
+      margin-top: 60px;
+    }
    #firstchild{
     width: 50%;
     float: left;
+    margin: auto;
+    height: 400px;
    }   
   
    #sectchild{
     width: 50%;
     float: left;
-    
-   }   
-  .clear{
-    clear: both;
-  }
- #heading{
-    background-color: red;
+    height: 500px;
+
+   }
+ 
+   
+ .head{
+  display: inline;
+  background-color: red;
+  font-size: 20px;
+  border: 3px;
+  border-radius: 25px;
  }
+ .divp{
+  display: inline;
+  margin-left: 15px;
+  color: red;
+
+ }
+ .divh2b{
+  font-size: 50px;
+ }
+ .firstimg{
+  width: 400px;
+  height: 500px;
+ }
+
   </style>
 
 </head>
@@ -56,11 +82,40 @@
   father.appendChild(creatdiv2)
 
    let creath1 =document.createElement('h1')
-   creath1.setAttribute('id','heading')
-  creatdiv.innerHTML= '50% off'
-
-
+   creath1.setAttribute('class','head')
+console.log(creath1,'check h1');
+  creath1.innerHTML= '50% off'
+  creatdiv.appendChild(creath1)
+   
   
+  let creatdivp = document.createElement('div')
+  creatdivp.setAttribute('id', 'divp')
+  creatdivp.setAttribute('class', 'divp')
+  console.log(creatdiv, 'check div');
+  firstchild.appendChild(creatdivp)
+
+  let creatp = document.createElement('p')
+  creatp.setAttribute('class','pa')
+  creatdivp.innerHTML= '<strong>best way for learn</strong>'
+
+let divh2 = document.createElement('div')
+  divh2.setAttribute('class','divh2b')
+  firstchild.appendChild(divh2)
+   
+  
+  const creath2 = document.createElement('h2')
+creath2.setAttribute('class','head2')
+divh2.innerHTML= 'The Best For The Learning'
+divh2.appendChild(creath2)
+
+  // 2nd section start
+  let creatimg = document.createElement('img')
+  creatimg.setAttribute('class','firstimg')
+  creatdiv2.innerHTML= '<img src="https://cdn4.vectorstock.com/i/1000x1000/19/98/funny-little-girl-and-boy-cartoon-studying-togethe-vector-11141998.jpg" alt=""  style="height: 460px; width: 450px;">'
+   creatdiv2.appendChild(creatimg)
+
+
+
 
 
 </script>
