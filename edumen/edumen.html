@@ -28,11 +28,16 @@
     height: 500px;
 
    }
- 
+ button{
+  background-color: red;
+  width: 70px;
+  height: 30px;
+  border-radius: 18%;
+ }
    
  .head{
   display: inline;
-  background-color: red;
+  
   font-size: 20px;
   border: 3px;
   border-radius: 25px;
@@ -56,7 +61,7 @@
 </head>
 <body class="father">
     <section  id="father">
- 
+ bu
 
 
     </section>
@@ -84,7 +89,8 @@
    let creath1 =document.createElement('h1')
    creath1.setAttribute('class','head')
 console.log(creath1,'check h1');
-  creath1.innerHTML= '50% off'
+  creath1.innerHTML= '<button >50% off</button>'
+  
   creatdiv.appendChild(creath1)
    
   
@@ -108,15 +114,18 @@ creath2.setAttribute('class','head2')
 divh2.innerHTML= 'The Best For The Learning'
 divh2.appendChild(creath2)
 
+const creatddiv1a = document.createElement('div')
+    creatddiv1a.setAttribute('class','diva')
+    creatddiv1a.innerHTML='Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias aut expedita cum temporibus provident nulla placeat minima maxime facere deleniti consequatur odit'
+     
+    creatdiv.appendChild(creatddiv1a)
+
   // 2nd section start
-  let creatimg = document.createElement('img')
-  creatimg.setAttribute('class','firstimg')
+ 
   creatdiv2.innerHTML= '<img src="https://cdn4.vectorstock.com/i/1000x1000/19/98/funny-little-girl-and-boy-cartoon-studying-togethe-vector-11141998.jpg" alt=""  style="height: 460px; width: 450px;">'
    creatdiv2.appendChild(creatimg)
 
-
-
-
+  
 
 </script>
 
